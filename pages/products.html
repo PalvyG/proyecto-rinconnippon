@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logotipo.png">
+    <script src="https://kit.fontawesome.com/f00609df66.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Rincón Nihon</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="header__contenedor-logotipo">
+                <img src="../images/logotipo.png" alt="Logotipo" class="header__imagen">
+                <h1 class="header__nombre--jap">ニホンコーナー</h1>
+                <h1 id="divisor-logo">|</h1>
+                <h1 class="header__nombre--esp">Rincón Nihon</h1>
+            </div>
+            <div class="header__contenedor-enlaces">
+                <ul class="header__enlaces">
+                    <li> <a href="../index.html"> Inicio </a> </li>
+                    <li> <a href="products.html"> Productos </a> </li>
+                    <li> <a href="services.html"> Servicios </a> </li>
+                    <li> <a href="contact.html"> Contacto </a> </li>
+                    <li> <a href="faq.html"> Preguntas Frecuentes </a> </li>
+                </ul>
+                <ul class="header__iconos"> 
+                    <li> <a href="../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li> <a href="products.html"><i class="fa-solid fa-box"></i></a></li>
+                    <li> <a href="services.html"><i class="fa-solid fa-truck"></i></a></li>
+                    <li> <a href="contact.html"><i class="fa-solid fa-at"></i></a></li>
+                    <li> <a href="faq.html"><i class="fa-solid fa-question"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor-filtros-productos">
+        <div class="filtros">
+            <form class="filtros__categoria" action="">
+                <legend class="filtros__categoria__titulo">Categoría</legend>
+                <section class="filtros__categoria__checkbox">
+                    <div>
+                        <label for="catcartaspegatinas">Cartas/Pegatinas</label>
+                        <input type="checkbox" name="catcartaspegatinas" id="catcartaspegatinas">
+                    </div>
+                    <div>
+                        <label for="catfiguras">Figuras</label>
+                        <input type="checkbox" name="catfiguras" id="catfiguras">
+                    </div>
+                    <div>
+                        <label for="catmangaslibros">Mangas/Libros</label>
+                        <input type="checkbox" name="catmangaslibros" id="catmangaslibros">
+                    </div>
+                    <div>
+                        <label for="catckotros">Otros</label>
+                        <input type="checkbox" name="catckotros" id="catckotros">
+                    </div>
+                </section>
+            </form>
+            <form class="filtros__marca" action="">
+                <legend class="filtros__marca__titulo">Marca</legend>
+                <section class="filtros__marca__checkbox">
+                    <div>
+                        <label for="marcapokemon">Pokémon</label>
+                        <input type="checkbox" name="marcapokemon" id="marcapokemon">
+                    </div>
+                    <div>
+                        <label for="marcadb">Dragon Ball</label>
+                        <input type="checkbox" name="marcadb" id="marcadb">
+                    </div>
+                    <div>
+                        <label for="marcayugioh">Yu-Gi-Oh</label>
+                        <input type="checkbox" name="marcayugioh" id="marcayugioh">
+                    </div>
+                    <div>
+                        <label for="marcamagic">Magic The Gathering</label>
+                        <input type="checkbox" name="marcamagic" id="marcamagic">
+                    </div>
+                    <div>
+                        <label for="marcagxmateria">GXMateria</label>
+                        <input type="checkbox" name="marcagxmateria" id="marcagxmateria">
+                    </div>
+                </section>
+            </form>
+            <form class="filtros__rango-precio" action="">
+                <legend class="filtros__rango-precio__titulo">Rango de precio</legend>
+                <section class="filtros__rango-precio__filtro">
+                    <label for="priceminimum">Mínimo: </label>
+                    <input type="number" name="priceminimum" id="priceminimum">
+                    <label for="pricemaximum">Máximo: </label>
+                    <input type="number" name="pricemaximum" id="pricemaximum">
+                </section>
+            </form>
+        </div>
+        <div class="productos">
+            <p>Aquí irían los productos xd</p>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="copyright">
+                <span> - © 2022 Rincón Nihon. Derechos reservados.</span>
+            </div>
+            <div class="redes-sociales">
+                <span>Redes Sociales</span>
+                <a target="blank_" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="blank_" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a target="blank_" href="https://youtube.com"><i class="fa-brands fa-youtube-square"></i></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

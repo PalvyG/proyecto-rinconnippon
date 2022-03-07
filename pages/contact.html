@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../images/logotipo.png">
+    <script src="https://kit.fontawesome.com/f00609df66.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Rincón Nihon</title>
+</head>
+
+<body>
+    <header>
+        <nav class="header">
+            <div class="header__contenedor-logotipo">
+                <img src="../images/logotipo.png" alt="Logotipo" class="header__imagen">
+                <h1 class="header__nombre--jap">ニホンコーナー</h1>
+                <h1 id="divisor-logo">|</h1>
+                <h1 class="header__nombre--esp">Rincón Nihon</h1>
+            </div>
+            <div class="header__contenedor-enlaces">
+                <ul class="header__enlaces">
+                    <li> <a href="../index.html"> Inicio </a> </li>
+                    <li> <a href="products.html"> Productos </a> </li>
+                    <li> <a href="services.html"> Servicios </a> </li>
+                    <li> <a href="contact.html"> Contacto </a> </li>
+                    <li> <a href="faq.html"> Preguntas Frecuentes </a> </li>
+                </ul>
+                <ul class="header__iconos"> 
+                    <li> <a href="../index.html"><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li> <a href="products.html"><i class="fa-solid fa-box"></i></a></li>
+                    <li> <a href="services.html"><i class="fa-solid fa-truck"></i></a></li>
+                    <li> <a href="contact.html"><i class="fa-solid fa-at"></i></a></li>
+                    <li> <a href="faq.html"><i class="fa-solid fa-question"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="consulta">¡Hacenos tu consulta!</h3>
+        <form class="forms" action="">
+            <div class="form1">
+                <h4 class="form1-titulo">Datos de contacto</h4>
+                <section class="form1-inputs">
+                    <div>
+                        <label for="fullname">Nombre y Apellido: </label>
+                        <input class="form1-inputs__text" type="text" id="fullname" name="fullname"
+                            placeholder="Ingresar nombre completo">
+                    </div>
+                    <div>
+                        <label for="phone">Número Telefónico: (+54)</label>
+                        <input class="form1-inputs__text form1-inputs__text--cel"
+                            type="number" id="phone" name="phone" placeholder="Incluir código de área">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico: </label>
+                        <input class="form1-inputs__text" type="email" id="email" name="email"
+                            placeholder="ejemplo@correo.com">
+                    </div>
+                </section>
+            </div>
+            <div class="form2">
+                <h4 class="form2-titulo">Datos de la solicitud</h4>
+                <section class="form2-inputs">
+                    <div>
+                        <label for="buy">¡Busco artículo(s) que no tienen!</label>
+                        <input type="radio" name="buysellask" id="buy">
+                    </div>
+                    <div>
+                        <label for="sell">¡Quiero vender mi(s) coleccionable(s)!</label>
+                        <input type="radio" name="buysellask" id="sell">
+                    </div>
+                    <div>
+                        <label for="ask">¡Quiero hacer una consulta!</label>
+                        <input type="radio" name="buysellask" id="ask">
+                    </div>
+                    <div class="form2-inputs__selector">
+                        <label class="form2-inputs__selector__titulo" for="typeform2-inputs__selector">Seleccioná el tipo de artículo: </label>
+                        <select class="form2-inputs__selector__input" name="typeform2-inputs__selector" id="typeform2-inputs__selector">
+                            <option value="selectcartaspegatinas">Cartas/Pegatinas</option>
+                            <option value="selectfiguras">Figuras</option>
+                            <option value="selectmangaslibros">Mangas/Libros</option>
+                            <option value="selectotrosvarios">Otros/Varios</option>
+                        </select>
+                        <p class="form2-inputs__selector__leyenda">(Por consultas, seleccionar "Otros/Varios")</p>
+                    </div>
+                    <div>
+                        <label for="fileupload">Cargar foto/s del/los artículo/s (Opcional): </label>
+                        <input class="form2-inputs__selector__btn" type="file" id="fileupload" name="fileupload" >
+                    </div>
+                    <div class="form2-inputs__selector__comentarios">
+                        <label for="comments">Comentarios/Consultas:</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <label for="terms">Términos y condiciones</label>
+                        <input type="checkbox" name="terms" id="terms">
+                    </div>
+                    <div class="contenedor-button">
+                        <button type="reset">Limpiar
+                            <button type="submit">Enviar
+                    </div>
+                </section>    
+            </div>
+            </section>
+        </form>
+        <div class="contacto-prefooter">
+            <h4 class="contacto-prefooter__texto">En breve enviaremos la respuesta a tu correo electrónico. De no ser
+                contestada, te contactaremos por
+                teléfono para notificarte.</h4>
+            <h4 class="contacto-prefooter__texto">¡Te agradecemos por tu tiempo!</h4>
+        </div>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="copyright">
+                <span> - © 2022 Rincón Nihon. Derechos reservados.</span>
+            </div>
+            <div class="redes-sociales">
+                <span>Redes Sociales</span>
+                <a target="blank_" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="blank_" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a target="blank_" href="https://youtube.com"><i class="fa-brands fa-youtube-square"></i></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
