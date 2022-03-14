@@ -7,9 +7,9 @@
 }
 
 body {
-    background-color: #FAE7CB;
+    background-color: #FAE7CB !important;
     color: #422911;
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Epilogue', sans-serif !important;
     font-weight: 300;
     line-height: 200%;
 }
@@ -17,6 +17,7 @@ body {
 main {
     margin-left: 5%;
     margin-right: 5%;
+    padding-top: 8rem;
 }
 
 .header {
@@ -36,10 +37,10 @@ main {
     align-items: center;
     gap: 4%;
     text-align: center;
+    padding-left: 4rem;
 }
 
 nav div img {
-    padding-left: 4rem;
     height: 65px;
     width: 65px;
 }
@@ -106,24 +107,25 @@ h1 {
 
 h3 {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 250%;
+    font-size: 250% !important;
     line-height: 200%;
     font-weight: 700;
 }
 
 h4 {
     font-weight: 700;
-    font-size: x-large;
+    font-size: x-large !important;
     line-height: 200%;
     font-style: italic;
 }
 
-p {
-    font-size: 125%;
+h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 200% !important;
 }
 
-main {
-    padding-top: 9%;
+p {
+    font-size: 125%;
 }
 
 .footer {
@@ -186,6 +188,7 @@ footer i {
     padding-left: 1%;
     padding-right: 1%;
     margin-top: 1%;
+    margin-bottom: 0;
     background-color: #FF9F45;
 }
 
@@ -209,6 +212,14 @@ footer i {
     height: 150px;
     max-width: 250px;
     max-height: 150px;
+}
+
+.carousel {
+    width: 450px;
+}
+
+.carousel img {
+    height: 500px;
 }
 
 .texto-index-1 {
@@ -272,6 +283,7 @@ iframe {
     padding-left: 1rem;
     padding-right: 1rem;
     margin-top: 5%;
+    margin-bottom: 0;
     background-color: #FF9F45;
 }
 
@@ -301,6 +313,7 @@ iframe {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     margin-right: 2rem;
+    margin-bottom: 0;
     padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -333,7 +346,8 @@ iframe {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     margin-right: 2rem;
-    padding-top: 00.5rem;
+    margin-bottom: 0;
+    padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: #ffcc00;
@@ -405,6 +419,7 @@ iframe {
     padding-top: 1%;
     margin-bottom: 2%;
     margin-left: 6%;
+    font-weight: 300;
 }
 
 
@@ -437,6 +452,7 @@ iframe {
     padding-left: 1%;
     padding-right: 1%;
     margin-top: 5%;
+    margin-bottom: 0;
     background-color: #FF9F45;
 }
 
@@ -478,8 +494,9 @@ iframe {
     padding-left: 1%;
     padding-right: 1%;
     margin-top: 3%;
+    margin-bottom: 0;
     background-color: #FC4F4F;
-    margin-left: 3%;
+    margin-left: 5%;
 }
 
 .form2-inputs {
@@ -539,6 +556,7 @@ textarea {
 .contenedor-button {
     display: flex;
     justify-content: center;
+    gap: 20%;
 }
 
 button {
@@ -599,6 +617,7 @@ button {
     padding-top: 2%;
     text-align: center;
     font-style: normal;
+    font-weight: 700;
 }
 
 .faq-prefooter__texto {
@@ -631,10 +650,11 @@ button {
     }
 
     .header__enlaces {
-        font-size: 90%;
+        font-size: 84%;
     }
     
     .header__contenedor-logotipo {
+        padding-left: 0%;
         display: flex;
         justify-content: center;
     }
@@ -896,9 +916,11 @@ button {
     }
     
     .header__contenedor-enlaces {
+        display: flex;
         width: 66%;
         justify-content: flex-end;
         padding-right: 5%;
+        align-content: flex-end;
     }
 
     .header__enlaces {
