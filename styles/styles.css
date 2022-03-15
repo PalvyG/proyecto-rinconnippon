@@ -242,6 +242,15 @@ footer i {
     font-style: italic;
 }
 
+.carousel-caption--index1 {
+    color: #fff;
+    background-color: #b38e4b;
+    padding: 2px;
+    border-radius: .5rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 .texto-index-1 {
     margin-bottom: 4%;
 }
@@ -672,6 +681,18 @@ button {
     font-weight: 700;
 }
 
+.accordion--faq1 {
+    background-color: #b38e4b !important;
+}
+
+.accordion-body--faq1 {
+    background-color: #ffd0b3 !important;
+}
+
+.accordion--faq1 b {
+    color: #fff;
+}
+
 .faq-prefooter {
     padding-top: 2%;
     text-align: center;
@@ -684,7 +705,6 @@ button {
     font-style: italic;
     padding-bottom: 2%;
 }
-
 
 
 
