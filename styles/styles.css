@@ -100,7 +100,7 @@ header a {
     display: none;
 }
 
-li {
+.header__contenedor-enlaces li {
     line-height: 135%;
     text-align: center;
     font-size: 120%;
@@ -186,9 +186,9 @@ footer i {
     width: fit-content;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    padding-top: 0.5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin-top: 1%;
     margin-bottom: 0;
     background-color: #FF9F45;
@@ -216,7 +216,7 @@ footer i {
     max-height: 150px;
 }
 
-.container-carousel {
+.container--carousel {
     max-width: 100% !important;
 }
 
@@ -620,7 +620,9 @@ button {
 
 /* FAQ */
 
-
+.container--faq {
+    max-width: 100% !important;
+}
 
 .faq__titulo {
     text-align: center;
@@ -638,20 +640,36 @@ button {
 }
 
 .faq__respuesta {
-    font-weight: 700;
-    margin-bottom: 1%;
-    margin-left: 3%;
-    font-size: x-large;
-    line-height: 200%;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.faq p {
     width: 88%;
     font-size: 125%;
     margin-bottom: 2%;
     margin-left: 6%;
+}
+
+.faq__ul {
+    margin-left: 5rem;
+    font-size: 125% !important;
+    list-style: circle;
+}
+
+.card--faq1 {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #b38e4b !important;
+}
+
+.card-body {
+    color: #Fff;
+}
+
+.card-body a {
+    background-color: #ffd0b3 !important;
+    color: #422911 !important;
+    font-weight: 700;
+}
+
+.card-body h4 {
+    font-weight: 700;
 }
 
 .faq-prefooter {
@@ -691,55 +709,59 @@ button {
     }
 
     .header__enlaces {
-        font-size: 84%;
+        font-size: 84% !important;
     }
-    
+
     .header__contenedor-logotipo {
         padding-left: 0%;
         display: flex;
         justify-content: center;
     }
-    
+
     .header__imagen {
         padding-left: 0;
     }
-    
+
     .header__nombre--jap {
         width: 6rem;
     }
-    
+
     #divisor-logo {
         font-size: 250%;
     }
-    
+
     .header__contenedor-enlaces {
         margin-top: 0;
         height: fit-content !important;
         width: 95%;
         justify-content: center;
     }
-    
+
     .header__enlaces {
         gap: 1.25rem;
         padding-right: 0px;
     }
 
-    li {
+    .header__contenedor-enlaces li {
         font-size: 120%;
         list-style: none;
     }
 
     main {
-        padding-top: 10rem;
+        padding-top: 12rem;
         font-size: 80%;
     }
 
     h3 {
-        font-size: 187% !important;
+        font-size: 32px !important;
     }
-    
+
     h4 {
-        font-size: 140% !important;
+        font-size: 24px !important;
+    }
+
+    p {
+        font-size: 19px !important;
     }
 
     .footer {
@@ -779,7 +801,7 @@ button {
         margin-bottom: 3%;
         overflow: auto;
     }
-    
+
     .tutorialesjcc p {
         margin-bottom: 0;
     }
@@ -789,7 +811,7 @@ button {
         max-height: 25vh;
         border-radius: 1rem;
     }
-    
+
 
 
     /* PRODUCTOS */
@@ -811,7 +833,7 @@ button {
         font-size: large;
     }
 
-    
+
 
 
     /* CONTACTO */
@@ -822,7 +844,7 @@ button {
 
     .forms div {
         width: 100%;
-    }    
+    }
 
     .form1-titulo {
         margin: 0 auto;
@@ -832,7 +854,7 @@ button {
         padding: 1%;
         margin-bottom: 2%;
     }
-    
+
     .form1-inputs {
         margin: 0 auto;
         text-align: center;
@@ -845,7 +867,7 @@ button {
     .form1-inputs div input {
         width: 98%;
     }
-    
+
     .form1-inputs div label {
         display: block;
     }
@@ -857,7 +879,7 @@ button {
         padding: 1%;
         margin-bottom: 2%;
     }
-    
+
     .form2-inputs {
         padding: 3%;
         text-align: center;
@@ -866,11 +888,11 @@ button {
         font-size: 125%;
         line-height: 200%;
     }
-    
+
     .form2-inputs__selector__input {
         height: 1.5rem;
     }
-    
+
     .form2-inputs__selector__leyenda {
         font-size: 100%;
     }
@@ -879,16 +901,16 @@ button {
         font-size: 100%;
         font-family: 'Epilogue', sans-serif;
     }
-    
+
     .form2-inputs__selector__comentarios {
         display: block;
         align-items: center;
     }
-    
+
     .form2-inputs__selector__comentarios textarea{
         width: 100%;
     }
-    
+
     .contacto-prefooter__texto {
         font-size: 125%;
     }
@@ -898,28 +920,31 @@ button {
     /* FAQ */
 
 
-    
+
     .faq__pregunta {
-        font-size: large;
+        text-align: center;
+        font-size: 22px !important;
     }
-    
+
     .faq__respuesta {
-        font-size: large;
-    }
-    
-    .faq p {
-        width: 88%;
-        font-size: 125%;
+        margin: 0 auto;
+        font-size: 19px !important;
         margin-bottom: 2%;
         margin-left: 6%;
     }
-    
+
+    .faq__ul {
+        list-style: circle;
+        margin-left: 5rem;
+        font-size: 19px !important;
+    }
+
     .faq-prefooter {
         padding-top: 5%;
         text-align: center;
         font-style: normal;
     }
-    
+
     .faq-prefooter__texto {
         text-align: center;
         font-style: italic;
@@ -932,7 +957,7 @@ button {
 /* Media Queries MOBILE */
 
 @media screen and (max-width: 600px) {
-    
+
     /* GENERALES */
 
     .header {
@@ -944,19 +969,19 @@ button {
         font-size: 125%;
         line-height: 100%;
     }
-    
+
     .header__contenedor-logotipo {
         display: flex;
         justify-content: flex-start;
         width: 33%;
         padding-left: 5%;
     }
-    
+
     .header__imagen {
         width: 50px;
         height: 50px;
     }
-    
+
     .header__nombre--esp {
         display: none;
     }
@@ -964,11 +989,11 @@ button {
     .header__nombre--jap {
         display: none;
     }
-    
+
     #divisor-logo {
         display: none;
     }
-    
+
     .header__contenedor-enlaces {
         margin-top: 1rem;
         display: flex;
@@ -985,7 +1010,7 @@ button {
     .header__iconos {
         font-size: larger;
         display: flex;
-        gap: 2rem;
+        gap: 1.6rem;
     }
 
     main {
@@ -999,7 +1024,16 @@ button {
 
 
     h3 {
-        font-size: 180%;
+        font-size: 24px !important;
+    }
+
+
+    h4 {
+        font-size: 19px !important;
+    }
+
+    p {
+        font-size: 17px !important;
     }
 
     .footer {
@@ -1040,11 +1074,11 @@ button {
         margin-bottom: 0;
     }
 
-    
+
 
     /* PRODUCTOS */
 
-    
+
 
     .productos {
         grid-template-columns: repeat(2, 1fr);
@@ -1057,11 +1091,15 @@ button {
     /* No hay media queries */
 
 
-    
+
     /* CONSULTA */
 
     .forms {
         font-size: 95%;
+    }
+
+    .form1-titulo, .form2-titulo {
+        font-size: 18px !important;
     }
 
     .form1-inputs {
@@ -1069,20 +1107,25 @@ button {
         min-width: 10rem;
         margin-bottom: 10%;
     }
-    
+
     .form2-inputs {
-        padding: 3%;
+        padding: 2.8%;
         text-align: center;
         border-radius: 1rem;
         max-width: 100vw;
         font-size: 125%;
         line-height: 200%;
     }
-    
+
+    #selectfile {
+        display: flex;
+        flex-direction: column;
+    }
+
     .form2-inputs__selector__input {
         height: 1.5rem;
     }
-    
+
     .form2-inputs__selector__leyenda {
         font-size: 100%;
     }
@@ -1091,17 +1134,35 @@ button {
         font-size: 100%;
         font-family: 'Epilogue', sans-serif;
     }
-    
+
     .form2-inputs__selector__comentarios {
         display: block;
         align-items: center;
     }
-    
+
     .form2-inputs__selector__comentarios textarea{
         width: 100%;
     }
-    
+
     .contacto-prefooter__texto {
         font-size: 125%;
+    }
+
+
+
+    /* FAQ */
+
+
+
+    .faq__pregunta {
+        font-size: large !important;
+    }
+
+    .faq__respuesta {
+        font-size: 17px !important;
+    }
+
+    .faq__ul {
+        font-size: 17px !important;
     }
 }
