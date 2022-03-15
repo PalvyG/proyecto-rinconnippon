@@ -8,7 +8,7 @@
 
 body {
     background-color: #FAE7CB !important;
-    color: #422911;
+    color: #422911 !important;
     font-family: 'Epilogue', sans-serif !important;
     font-weight: 300;
     line-height: 200%;
@@ -74,14 +74,21 @@ nav div img {
     width: 70%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    color: #FC4F4F !important;
 }
 
 header a {
     text-decoration: none;
-    color: #422911;
+    color: #422911 !important;
 }
 
 .header__enlaces {
+    margin-top: 1rem;
+    height: 100%;
     display: flex;
     font-weight: 700;
     gap: 1.5rem;
@@ -117,11 +124,6 @@ h4 {
     font-size: x-large !important;
     line-height: 200%;
     font-style: italic;
-}
-
-h5 {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 200% !important;
 }
 
 p {
@@ -194,7 +196,7 @@ footer i {
 
 .seccion-productos__marcas {
     display: flex;
-    width: 95% ;
+    width: 100% ;
     height: fit-content;
     gap: 1rem;
     padding: 2%;
@@ -214,12 +216,30 @@ footer i {
     max-height: 150px;
 }
 
-.carousel {
-    width: 450px;
+.container-carousel {
+    max-width: 100% !important;
 }
 
 .carousel img {
-    height: 500px;
+    border-radius: .5rem;
+    max-width: 390px;
+    max-height: 390px;
+    margin: 0 auto !important;
+}
+
+.carousel h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 150% !important;
+    margin-bottom: 5%;
+}
+
+.carousel p {
+    font-size: 115% !important;
+    line-height: 100%;
+}
+
+.caption {
+    font-style: italic;
 }
 
 .texto-index-1 {
@@ -235,6 +255,7 @@ footer i {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2%;
+    padding-bottom: 0;
     background-color: #FC4F4F;
     border-radius: 1rem;
     border-top-left-radius: 0%;
@@ -251,6 +272,7 @@ iframe {
     min-height: 1vh;
     min-width: 15vh;
     border-radius: 1rem;
+    margin-bottom: 2%;
 }
 
 .tutorialesjcc p {
@@ -540,6 +562,7 @@ iframe {
 }
 
 .form2-inputs__selector__input {
+    height: 3rem;
     font-size: 100%;
     font-family: 'Epilogue', sans-serif;
 }
@@ -690,6 +713,8 @@ button {
     }
     
     .header__contenedor-enlaces {
+        margin-top: 0;
+        height: fit-content !important;
         width: 95%;
         justify-content: center;
     }
@@ -710,11 +735,11 @@ button {
     }
 
     h3 {
-        font-size: 187%;
+        font-size: 187% !important;
     }
     
     h4 {
-        font-size: 140%;
+        font-size: 140% !important;
     }
 
     .footer {
@@ -747,7 +772,7 @@ button {
         border-top-left-radius: 0%;
         max-width: 90vw;
         min-width: 65%;
-        max-height: 61vh;
+        max-height: 65vh;
         align-items: center;
         justify-items: center;
         justify-content: space-evenly;
@@ -755,8 +780,12 @@ button {
         overflow: auto;
     }
     
+    .tutorialesjcc p {
+        margin-bottom: 0;
+    }
+
     iframe {
-        max-width: 40vw;
+        max-width: 38vw;
         max-height: 25vh;
         border-radius: 1rem;
     }
@@ -941,6 +970,7 @@ button {
     }
     
     .header__contenedor-enlaces {
+        margin-top: 1rem;
         display: flex;
         width: 66%;
         justify-content: flex-end;
@@ -1007,6 +1037,7 @@ button {
         max-width: 80vw;
         min-height: 45vw;
         border-radius: 1rem;
+        margin-bottom: 0;
     }
 
     
