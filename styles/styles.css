@@ -29,6 +29,7 @@ main {
     justify-content: space-between;
     align-items: center;
     overflow: auto;
+    box-shadow: 1px 1px 1rem 1px #b38e4b;
 }
 
 .header__contenedor-logotipo {
@@ -609,7 +610,7 @@ textarea {
     gap: 20%;
 }
 
-button {
+.contenedor-button button {
     padding: .5%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -665,6 +666,7 @@ button {
     max-width: 300px;
     margin: 0 auto;
     background-color: #b38e4b !important;
+    box-shadow: 1px 1px 1rem 1px #b38e4b !important;
 }
 
 .card-body {
@@ -681,8 +683,13 @@ button {
     font-weight: 700;
 }
 
+strong{
+    font-weight: 700 !important;
+}
+
 .accordion--faq1 {
     background-color: #b38e4b !important;
+    box-shadow: 1px 1px 1rem 1px #b38e4b !important;
 }
 
 .accordion-body--faq1 {
@@ -690,7 +697,7 @@ button {
 }
 
 .accordion--faq1 b {
-    color: #fff;
+    color: #fff !important;
 }
 
 .faq-prefooter {
