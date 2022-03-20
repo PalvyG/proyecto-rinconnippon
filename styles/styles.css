@@ -313,7 +313,7 @@ footer i:hover {
 }
 
 .carousel-caption--index1 {
-    color: #fff;
+    color: #fff !important;
     background-color: #b38e4b;
     padding: 2px;
     height: 310px;
@@ -324,6 +324,10 @@ footer i:hover {
     z-index: 1;
     transform: translate(0%, 6.5%);
     transition: 0.5s;
+}
+
+.carousel-caption--index1 span {
+    color: #Fff !important;
 }
 
 .carousel-caption--index1:hover {
