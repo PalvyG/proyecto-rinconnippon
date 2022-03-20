@@ -7,11 +7,16 @@
 }
 
 body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20%;
     background-color: #FAE7CB !important;
     color: #422911 !important;
     font-family: 'Epilogue', sans-serif !important;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 200%;
+    overflow-x: hidden;
 }
 
 main {
@@ -30,6 +35,7 @@ main {
     align-items: center;
     overflow: auto;
     box-shadow: 1px 1px 1rem 1px #b38e4b;
+    z-index: 10;
 }
 
 .header__contenedor-logotipo {
@@ -80,11 +86,60 @@ nav div img {
 
 a {
     color: #FC4F4F !important;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {
+    color: #be3434 !important;
+}
+
+.animacion-links::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: #be3434;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.animacion-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transform: transform 0.5s;
 }
 
 header a {
     text-decoration: none;
+    color: #743902 !important;
+    position: relative;
+    transition: 0.5s;
+}
+
+header a:hover {
     color: #422911 !important;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: #422911;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .header__enlaces {
@@ -166,6 +221,15 @@ footer a {
 footer i {
     color: #000;
     font-size: 350%;
+    transition: 0.5s;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    transform-origin: center;
 }
 
 
@@ -215,6 +279,15 @@ footer i {
     height: 150px;
     max-width: 250px;
     max-height: 150px;
+    transition: 0.5s;
+    transform: scale(1);
+    transform-origin: center;
+}
+
+.seccion-productos__marcas img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    transform-origin: center;
 }
 
 .container--carousel {
@@ -223,8 +296,8 @@ footer i {
 
 .carousel img {
     border-radius: .5rem;
-    max-width: 390px;
-    max-height: 390px;
+    max-width: 310px;
+    max-height: 310px;
     margin: 0 auto !important;
 }
 
@@ -236,20 +309,26 @@ footer i {
 
 .carousel p {
     font-size: 115% !important;
-    line-height: 100%;
-}
-
-.caption {
-    font-style: italic;
+    line-height: 150%;
 }
 
 .carousel-caption--index1 {
     color: #fff;
     background-color: #b38e4b;
     padding: 2px;
+    height: 310px;
+    width: 310px;
     border-radius: .5rem;
-    width: fit-content;
     margin: 0 auto;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0%, 6.5%);
+    transition: 0.5s;
+}
+
+.carousel-caption--index1:hover {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .texto-index-1 {
@@ -257,6 +336,7 @@ footer i {
 }
 
 .texto-solapa--rosa {
+    margin-top: 5%;
     background-color: #FC4F4F;
 }
 
@@ -469,7 +549,7 @@ iframe {
     padding-top: 1%;
     margin-bottom: 2%;
     margin-left: 6%;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -623,7 +703,7 @@ textarea {
 }
 
 .contacto-prefooter__texto {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 
@@ -663,7 +743,7 @@ textarea {
 }
 
 .card--faq1 {
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     background-color: #b38e4b !important;
     box-shadow: 1px 1px 1rem 1px #b38e4b !important;
@@ -1068,7 +1148,7 @@ strong{
     }
 
     .footer i {
-        font-size: 300%;
+        font-size: 400%;
     }
 
 
