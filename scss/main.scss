@@ -1,0 +1,30 @@
+/* VARIABLES */
+
+$bgcolor-fondo: #fae7cb;
+$amarillo: #ffcc00;
+$beige: #b38e4b;
+$naranja: #FF9F45;
+$fuxia: #FC4F4F;
+$carmesi: #be3434;
+$crema: #ffd0b3;
+$marron-d: #422911;
+$marron-l: #743902;
+$ff-t: 'Source Sans Pro', sans-serif;
+$ff-p: 'Epilogue', sans-serif;
+$fw-h: 700;
+$fw-l: 400;
+$fs-xl: 32px;
+$fs-l: 24px;
+$fs-m: 19px;
+$fs-s: 17px;
+$img-max: 310px;
+$br-solapas: 1rem;
+
+
+
+/* IMPORT */
+
+@import "partials/_generales";
+@import "partials/_componentes";
+@import "partials/_mq-tablet";
+@import "partials/_mq-mobile";

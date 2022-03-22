@@ -1,0 +1,203 @@
+/* Media Queries MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    /* GENERALES */
+
+    main {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        padding-top: 8rem;
+        font-size: 80%;
+        line-height: 200%;
+    }
+
+    h3 {
+        font-size: $fs-l !important;
+    }
+
+
+    h4 {
+        font-size: $fs-m !important;
+    }
+
+    p {
+        font-size: $fs-s !important;
+    }
+
+    .header {
+        min-height: 100px;
+        flex-wrap: nowrap;
+
+        .header__cont-logo {
+            display: flex;
+            justify-content: flex-start;
+            width: 33%;
+            padding-left: 5%;
+
+            h1 {
+                font-size: 125%;
+                line-height: 100%;
+            }
+
+            .header__cont-logo__img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .header__cont-logo__name--esp {
+                display: none;
+            }
+
+            #divisor-logo {
+                display: none;
+            }
+
+            .header__cont-logo__name--jap {
+                display: none;
+            }
+        }
+
+        .header__cont-links {
+            margin-top: 1rem;
+            display: flex;
+            width: 66%;
+            justify-content: flex-end;
+            padding-right: 5%;
+            align-content: flex-end;
+
+            .header__cont-links__links {
+                display: none;
+            }
+        
+            .header__cont-links__icons {
+                font-size: larger;
+                display: flex;
+                gap: 1.6rem;
+            }
+        }
+    }
+
+    .footer {
+        font-size: 12px;
+
+        i {
+            font-size: 400%;
+        }
+    }
+
+
+
+    /* INDEX */
+
+    .seccion-productos__marcas {
+        max-height: 50vh;
+
+        img, a {
+            max-width: 150px;
+            min-width: 75px;
+            max-height: 75px;
+        }
+    }
+
+    .tutorialesjcc {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        max-height: 50vh;
+    }
+
+    iframe {
+        max-width: 80vw;
+        min-height: 45vw;
+        border-radius: $br-solapas;
+        margin-bottom: 0;
+    }
+
+
+
+    /* PRODUCTOS */
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+
+    /* SERVICIOS */
+    /* No hay media queries */
+
+
+
+    /* CONSULTA */
+
+    .forms {
+        font-size: 95%;
+    }
+
+    .form1__titulo, .form2__titulo {
+        font-size: 18px !important;
+    }
+
+    .form1__inputs {
+        width: 75vw;
+        min-width: 10rem;
+        margin-bottom: 10%;
+    }
+
+    .form2__inputs {
+        padding: 2.8%;
+        text-align: center;
+        border-radius: $br-solapas;
+        max-width: 100vw;
+        font-size: 125%;
+        line-height: 200%;
+
+        #selectfile {
+            display: flex;
+            flex-direction: column;
+        }    
+
+        .form2__inputs__selector__input {
+            height: 1.5rem;
+        }
+
+        .form2__inputs__selector__leyenda {
+            font-size: 100%;
+        }
+    
+        .form2__inputs__selector__btn {
+            font-size: 100%;
+            font-family: $ff-p;
+        }
+
+        .form2__inputs__selector__comentarios {
+            display: block;
+            align-items: center;
+
+            textarea{
+                width: 100%;
+            }
+        }
+    }
+
+    .contacto-prefooter__texto {
+        font-size: $fs-s !important;
+    }
+
+
+
+    /* FAQ */
+
+    .faq__pregunta {
+        font-size: large !important;
+    }
+
+    .faq__respuesta {
+        font-size: $fs-s !important;
+    }
+
+    .faq__ul {
+        font-size: $fs-s !important;
+    }
+}

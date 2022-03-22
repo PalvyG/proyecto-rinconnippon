@@ -1,0 +1,262 @@
+/* Media Queries TABLET */
+
+@media screen and (max-width: 1024px) {
+
+    /* GENERALES */
+
+    main {
+        padding-top: 12rem;
+        font-size: 80%;
+    }
+
+    h3 {
+        font-size: $fs-xl !important;
+    }
+
+    h4 {
+        font-size: $fs-l !important;
+    }
+
+    p {
+        font-size: $fs-m !important;
+    }
+
+    .header {
+        display: flex;
+        min-height: 150px;
+        justify-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .header__cont-logo {
+            padding-left: 0%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 125%;
+                line-height: 100%;
+            }
+
+            .header__cont-logo__img {
+                padding-left: 0;
+            }
+
+            .header__cont-logo__name--esp {
+                width: 6rem;
+                font-size: $fs-l;
+            }
+
+            #divisor-logo {
+                font-size: 250%;
+            }
+
+            .header__cont-logo__name--jap {
+                width: 6rem;
+                font-size: $fs-l;
+            }
+        }
+
+        .header__cont-links {
+            margin-top: 0;
+            height: fit-content !important;
+            width: 95%;
+            justify-content: center;
+
+            .header__cont-links__links {
+                gap: 1.25rem;
+                padding-right: 0px;
+                font-size: 84% !important;
+            }
+
+            li {
+                font-size: 120%;
+                list-style: none;
+            }
+        }
+    }
+
+    .footer {
+        font-size: small;
+
+        i {
+            font-size: 350%;
+        }
+    }
+
+    
+
+    /* INDEX */
+
+    .seccion-productos__marcas {
+
+        img, a  {
+        max-width: 195px;
+        min-width: 100px;
+        max-height: 125px;
+        }
+    }
+
+    .tutorialesjcc {
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 2%;
+        background-color: $fuxia;
+        border-radius: $br-solapas;
+        border-top-left-radius: 0%;
+        max-width: 90vw;
+        min-width: 65%;
+        max-height: 65vh;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+        overflow: auto;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    iframe {
+        max-width: 38vw;
+        max-height: 25vh;
+        border-radius: $br-solapas;
+    }
+
+
+
+    /* PRODUCTOS */
+
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+
+
+    /* SERVICIOS */
+
+
+
+    .servicios__subtitulo {
+        font-size: large;
+    }
+
+    /* CONTACTO */
+
+    .forms  {
+        margin: 0 auto;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .form1__titulo {
+        margin: 0 auto;
+        margin-top: 3%;
+        font-size: large;
+        border-radius: $br-solapas;
+        padding: 1%;
+        margin-bottom: 2%;
+    }
+
+    .form1__inputs {
+        margin: 0 auto;
+        text-align: center;
+        width: 55vw;
+        min-width: 30rem;
+        border-radius: $br-solapas;
+        margin-bottom: 3%;
+
+        div input {
+            width: 98%;
+        }
+
+        div label {
+            display: block;
+        }
+    }
+
+    .form2__titulo {
+        margin: 0 auto;
+        font-size: large;
+        border-radius: $br-solapas;
+        padding: 1%;
+        margin-bottom: 2%;
+    }
+
+    .form2__inputs {
+        padding: 3%;
+        text-align: center;
+        border-radius: $br-solapas;
+        max-width: 80vw;
+        font-size: 125%;
+        line-height: 200%;
+
+        .form2__inputs__selector__input {
+            height: 1.5rem;
+        }
+
+        .form2__inputs__selector__leyenda {
+            font-size: 100%;
+        }
+
+        .form2__inputs__selector__btn {
+            font-size: 100%;
+            font-family: $ff-p;
+        }
+
+        .form2__inputs__comentarios {
+            display: block;
+            align-items: center;
+
+            textarea{
+                width: 100%;
+            }
+        }
+    }
+
+    .contacto-prefooter__texto {
+        font-size: $fs-m !important;
+    }
+
+
+
+    /* FAQ */
+
+    .faq__pregunta {
+        text-align: center;
+        font-size: $fs-l !important;
+    }
+
+    .faq__respuesta {
+        margin: 0 auto;
+        font-size: $fs-m !important;
+        margin-bottom: 2%;
+        margin-left: 6%;
+    }
+
+    .faq__ul {
+        list-style: circle;
+        margin-left: 5rem;
+        font-size: $fs-m !important;
+    }
+
+    .faq-prefooter {
+        padding-top: 5%;
+        text-align: center;
+        font-style: normal;
+
+        .faq-prefooter__texto {
+            text-align: center;
+            font-style: italic;
+            padding-bottom: 5%;
+        }
+    }
+}

@@ -1,0 +1,246 @@
+/* GENERALES */
+
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 20%;
+    background-color: $bgcolor-fondo !important;
+    color: $marron-d !important;
+    font-family: $ff-p !important;
+    font-weight: $fw-l;
+    line-height: 200%;
+    overflow-x: hidden;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 8rem;
+}
+
+a {
+    color: $fuxia !important;
+    text-decoration: none;
+    position: relative;
+
+    &:hover {
+        color: $carmesi !important;
+    }
+}
+
+h1 {
+    font-family: $ff-t;
+    font-size: 250%;
+}
+
+h3 {
+    font-family: $ff-t;
+    font-size: 250% !important;
+    line-height: 200%;
+    font-weight: $fw-h;
+}
+
+h4 {
+    font-weight: $fw-h;
+    font-size: x-large !important;
+    line-height: 200%;
+    font-style: italic;
+}
+
+p {
+    font-size: 125%;
+}
+
+.header {
+    width: 100%;
+    height: 6rem;
+    background-color: $amarillo;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+    box-shadow: 1px 1px 1rem 1px $beige;
+    z-index: 10;
+
+    .header__cont-logo {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        gap: 4%;
+        text-align: center;
+        padding-left: 4rem;
+
+        img {
+        height: 65px;
+        width: 65px;
+        }
+
+        .header__cont-logo__name--jap {
+            margin-left: -2%;
+            margin-right: -2%;
+            width: 8rem;
+            font-family: $ff-t;
+            font-size: 200%;
+        }
+
+        #divisor-logo {
+            align-items: center;
+            justify-content: center;
+            margin-top: -1.25%;
+            font-size: 375%;
+        }
+
+        .header__cont-logo__name--esp {
+            margin-left: -2%;
+            margin-right: -2%;
+            width: min-content;
+            font-family: $ff-t;
+            line-height: 100%;
+            font-size: 175%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .header__cont-links {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .header__cont-links__links {
+            margin-top: 1rem;
+            height: 100%;
+            display: flex;
+            font-weight: $fw-h;
+            gap: 1.5rem;
+            align-items: center;
+            padding-right: 4rem;
+        }
+        
+        .header__cont-links__icons {
+            display: none;
+        }
+        
+        li {
+            line-height: 135%;
+            text-align: center;
+            font-size: 120%;
+            list-style: none;
+        }
+    }
+}
+
+
+
+
+
+/* PARA HACER CON MAPEADO */
+
+.animacion-links::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: $carmesi;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+.animacion-links:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transform: transform 0.5s;
+}
+
+header a {
+    text-decoration: none;
+    color: $marron-l !important;
+    position: relative;
+    transition: 0.5s;
+
+    &:hover {
+        color: $marron-d !important;
+
+        &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 3px;
+        background-color: $marron-d;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s;
+    }
+}
+
+/* ---------------------- */
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    max-height: 5rem;
+    width: inherit;
+    min-height: 6rem;
+    background-color: $marron-d;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    span {
+        font-size: 100%;
+        font-style: italic;
+        color: $bgcolor-fondo;
+    }
+
+    .copyright {
+        width: 50%;
+    }
+
+    .redes-sociales {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 2.5%;
+        }    
+
+        i {
+            color: #000;
+            font-size: 350%;
+            transition: 0.5s;
+            transform: scale(1);
+            transform-origin: center;
+
+            &:hover {
+                transform: scale(1.2);
+                transition: 0.5s;
+                transform-origin: center;
+            }
+        }
+    }    
+}
