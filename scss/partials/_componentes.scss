@@ -95,7 +95,8 @@
         transition: 0.5s;
     }
 
-    .carousel-caption--index1 span {
+    span {
+        font-style: italic;
         color: #Fff !important;
     }
 }
@@ -106,7 +107,10 @@
 
 .texto-solapa--rosa {
     margin-top: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
     background-color: $fuxia;
+    margin-bottom: -0.5%;
 }
 
 .tutorialesjcc {
@@ -126,7 +130,7 @@
     margin-bottom: 3%;
     overflow: auto;
 
-    .tutorialesjcc p {
+    p {
         text-align: center;
         line-height: 100%;
         font-weight: $fw-h;
@@ -143,11 +147,19 @@ iframe {
 
 .texto-index-2 {
     margin-bottom: 4%;
+
+    span {
+        font-style: italic;
+    }
 }
 
 
 
 /* PRODUCTOS */
+
+#h1-products {
+    font-size: 44px !important;
+}
 
 .filtros__categoria__titulo {
     font-weight: $fw-h;
@@ -314,6 +326,10 @@ iframe {
         margin-bottom: 2%;
         margin-left: 6%;
         font-weight: $fw-l;
+
+        span {
+            font-style: italic;
+        }
     }
 }
 
@@ -345,6 +361,10 @@ iframe {
     font-size: 125%;
     margin-bottom: 2%;
     margin-left: 6%;
+
+    span {
+        font-style: italic;
+    }
 }
 
 .faq__ul {
@@ -369,7 +389,7 @@ iframe {
         font-weight: $fw-h;
     }
 
-    h4 {
+    h3 {
         font-weight: $fw-h;
     }
 }
@@ -379,32 +399,22 @@ strong{
 }
 
 .accordion--faq1 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     background-color: $beige !important;
     box-shadow: 1px 1px 1rem 1px $beige !important;
 
     b {
         color: #fff !important;
+        line-height: 125% !important;
     }
 }
 
 .accordion-body--faq1 {
     background-color: $crema !important;
-}
-
-.faq-prefooter {
-
-    h4 {
-    padding-top: 2%;
-    text-align: center;
-    font-style: normal;
-    font-weight: $fw-h;
-    }
-
-    p {
-        text-align: center;
-        font-style: italic;
-        padding-bottom: 2%;
-    }
+    font-size: $fs-s !important;
 }
 
 

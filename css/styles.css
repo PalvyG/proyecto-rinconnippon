@@ -6,7 +6,7 @@
   padding: 0%; }
 
 body {
-  background-image: url(../images/background.png);
+  background-image: url(../../images/background.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 20%;
@@ -31,15 +31,35 @@ a {
 
 h1 {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 250%; }
+  font-size: 700%;
+  text-align: center; }
 
-h3 {
+.h1-index {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  height: 60vh;
+  width: 100%;
+  line-height: 600%; }
+  .h1-index .h1-index__title {
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 2rem; }
+  .h1-index b {
+    font-size: 32px; }
+  .h1-index span {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px; }
+
+h2 {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 250% !important;
   line-height: 200%;
   font-weight: 700; }
 
-h4 {
+h3 {
   font-weight: 700;
   font-size: x-large !important;
   line-height: 200%;
@@ -65,22 +85,26 @@ p {
     align-items: center;
     gap: 4%;
     text-align: center;
-    padding-left: 4rem; }
+    padding-left: 4rem;
+    justify-items: center; }
     .header .header__cont-logo img {
       height: 65px;
       width: 65px; }
     .header .header__cont-logo .header__cont-logo__name--jap {
+      margin-top: 15px;
       margin-left: -2%;
       margin-right: -2%;
       width: 8rem;
       font-family: "Source Sans Pro", sans-serif;
-      font-size: 200%; }
+      font-size: 200%;
+      font-weight: 700; }
     .header .header__cont-logo #divisor-logo {
       align-items: center;
       justify-content: center;
-      margin-top: -1.25%;
+      margin-top: 20px;
       font-size: 375%; }
     .header .header__cont-logo .header__cont-logo__name--esp {
+      margin-top: 12.5px;
       margin-left: -2%;
       margin-right: -2%;
       width: min-content;
@@ -150,6 +174,17 @@ header a {
     transition: transform .5s; }
 
 /* ---------------------- */
+.prefooter h3 {
+  padding-top: 2%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700; }
+
+.prefooter p {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 2%; }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -260,7 +295,8 @@ header a {
   .carousel-caption--index1:hover {
     opacity: 1;
     transition: 0.5s; }
-  .carousel-caption--index1 .carousel-caption--index1 span {
+  .carousel-caption--index1 span {
+    font-style: italic;
     color: #Fff !important; }
 
 .texto-index-1 {
@@ -268,7 +304,10 @@ header a {
 
 .texto-solapa--rosa {
   margin-top: 5%;
-  background-color: #FC4F4F; }
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #FC4F4F;
+  margin-bottom: -0.5%; }
 
 .tutorialesjcc {
   gap: 1rem;
@@ -286,7 +325,7 @@ header a {
   justify-items: center;
   margin-bottom: 3%;
   overflow: auto; }
-  .tutorialesjcc .tutorialesjcc p {
+  .tutorialesjcc p {
     text-align: center;
     line-height: 100%;
     font-weight: 700;
@@ -300,8 +339,13 @@ iframe {
 
 .texto-index-2 {
   margin-bottom: 4%; }
+  .texto-index-2 span {
+    font-style: italic; }
 
 /* PRODUCTOS */
+#h1-products {
+  font-size: 44px !important; }
+
 .filtros__categoria__titulo {
   font-weight: 700;
   font-size: larger;
@@ -447,6 +491,8 @@ iframe {
     margin-bottom: 2%;
     margin-left: 6%;
     font-weight: 400; }
+    .servicios .servicios__descripcion span {
+      font-style: italic; }
 
 /* FAQ */
 .container--faq {
@@ -470,6 +516,8 @@ iframe {
   font-size: 125%;
   margin-bottom: 2%;
   margin-left: 6%; }
+  .faq__respuesta span {
+    font-style: italic; }
 
 .faq__ul {
   margin-left: 5rem;
@@ -488,31 +536,26 @@ iframe {
     background-color: #ffd0b3 !important;
     color: #422911 !important;
     font-weight: 700; }
-  .card-body h4 {
+  .card-body h3 {
     font-weight: 700; }
 
 strong {
   font-weight: 700 !important; }
 
 .accordion--faq1 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
   background-color: #b38e4b !important;
   box-shadow: 1px 1px 1rem 1px #b38e4b !important; }
   .accordion--faq1 b {
-    color: #fff !important; }
+    color: #fff !important;
+    line-height: 125% !important; }
 
 .accordion-body--faq1 {
-  background-color: #ffd0b3 !important; }
-
-.faq-prefooter h4 {
-  padding-top: 2%;
-  text-align: center;
-  font-style: normal;
-  font-weight: 700; }
-
-.faq-prefooter p {
-  text-align: center;
-  font-style: italic;
-  padding-bottom: 2%; }
+  background-color: #ffd0b3 !important;
+  font-size: 17px !important; }
 
 /* CONTACTO */
 .consulta {
@@ -635,12 +678,16 @@ textarea {
 /* Media Queries TABLET */
 @media screen and (max-width: 1024px) {
   /* GENERALES */
+  html, body {
+    overflow-x: hidden; }
+  body {
+    position: relative; }
   main {
     padding-top: 12rem;
     font-size: 80%; }
-  h3 {
+  h2 {
     font-size: 32px !important; }
-  h4 {
+  h3 {
     font-size: 24px !important; }
   p {
     font-size: 19px !important; }
@@ -656,19 +703,17 @@ textarea {
       justify-content: center;
       align-content: center;
       align-items: center; }
-      .header .header__cont-logo h1 {
-        font-size: 125%;
-        line-height: 100%; }
       .header .header__cont-logo .header__cont-logo__img {
         padding-left: 0; }
       .header .header__cont-logo .header__cont-logo__name--esp {
         width: 6rem;
-        font-size: 24px; }
+        font-size: 24px !important; }
       .header .header__cont-logo #divisor-logo {
-        font-size: 250%; }
+        font-size: 350% !important; }
       .header .header__cont-logo .header__cont-logo__name--jap {
         width: 6rem;
-        font-size: 24px; }
+        font-size: 24px !important;
+        font-weight: 700; }
     .header .header__cont-links {
       margin-top: 0;
       height: fit-content !important;
@@ -701,7 +746,7 @@ textarea {
     border-top-left-radius: 0%;
     max-width: 90vw;
     min-width: 65%;
-    max-height: 65vh;
+    max-height: 67vh;
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
@@ -714,9 +759,11 @@ textarea {
     max-height: 25vh;
     border-radius: 1rem; }
   /* PRODUCTOS */
+  #h1-products {
+    font-size: 32px !important; }
   .productos {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
   /* SERVICIOS */
   .servicios__subtitulo {
     font-size: large; }
@@ -801,9 +848,29 @@ textarea {
     padding-top: 8rem;
     font-size: 80%;
     line-height: 200%; }
-  h3 {
+  .h1-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35%;
+    height: 60vh;
+    width: 100%;
+    line-height: 400%; }
+    .h1-index .h1-index__title {
+      margin: 0 auto;
+      text-align: center;
+      align-self: center;
+      margin-bottom: 2rem; }
+    .h1-index b {
+      font-size: 32px; }
+    .h1-index span {
+      font-weight: 700;
+      font-style: italic;
+      font-size: 24px; }
+  h1 {
+    font-size: 60px !important; }
+  h2 {
     font-size: 24px !important; }
-  h4 {
+  h3 {
     font-size: 19px !important; }
   p {
     font-size: 17px !important; }
@@ -851,6 +918,13 @@ textarea {
       max-width: 150px;
       min-width: 75px;
       max-height: 75px; }
+  .texto-solapa--rosa {
+    font-size: 22px !important;
+    margin-top: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #FC4F4F;
+    margin-bottom: -0.5%; }
   .tutorialesjcc {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -862,8 +936,8 @@ textarea {
     margin-bottom: 0; }
   /* PRODUCTOS */
   .productos {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr); }
   /* SERVICIOS */
   /* No hay media queries */
   /* CONSULTA */
@@ -891,7 +965,8 @@ textarea {
       font-size: 100%; }
     .form2__inputs .form2__inputs__selector__btn {
       font-size: 100%;
-      font-family: "Epilogue", sans-serif; }
+      font-family: "Epilogue", sans-serif;
+      margin: 0 auto; }
     .form2__inputs .form2__inputs__selector__comentarios {
       display: block;
       align-items: center; }
@@ -905,4 +980,5 @@ textarea {
   .faq__respuesta {
     font-size: 17px !important; }
   .faq__ul {
-    font-size: 17px !important; } }
+    font-size: 17px !important;
+    margin-left: 10% !important; } }

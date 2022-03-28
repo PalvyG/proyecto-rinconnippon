@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(../images/background.png);
+    background-image: url(../../images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 20%;
@@ -38,17 +38,46 @@ a {
 
 h1 {
     font-family: $ff-t;
-    font-size: 250%;
+    font-size: 700%;
+    text-align: center;
 }
 
-h3 {
+.h1-index {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 60vh;
+    width: 100%;
+    line-height: 600%;
+
+    .h1-index__title {
+        margin: 0 auto;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+
+    b {
+        font-size: $fs-xl;
+    }
+
+    span {
+        font-weight: 700;
+        font-style: italic;
+        font-size: $fs-l;
+    }
+}
+
+
+
+h2 {
     font-family: $ff-t;
     font-size: 250% !important;
     line-height: 200%;
     font-weight: $fw-h;
 }
 
-h4 {
+h3 {
     font-weight: $fw-h;
     font-size: x-large !important;
     line-height: 200%;
@@ -78,6 +107,7 @@ p {
         gap: 4%;
         text-align: center;
         padding-left: 4rem;
+        justify-items: center;
 
         img {
         height: 65px;
@@ -85,21 +115,24 @@ p {
         }
 
         .header__cont-logo__name--jap {
+            margin-top: 15px;
             margin-left: -2%;
             margin-right: -2%;
             width: 8rem;
             font-family: $ff-t;
             font-size: 200%;
+            font-weight: 700;
         }
 
         #divisor-logo {
             align-items: center;
             justify-content: center;
-            margin-top: -1.25%;
+            margin-top: 20px;
             font-size: 375%;
         }
 
         .header__cont-logo__name--esp {
+            margin-top: 12.5px;
             margin-left: -2%;
             margin-right: -2%;
             width: min-content;
@@ -198,6 +231,22 @@ header a {
 
 
 
+
+.prefooter {
+
+    h3 {
+    padding-top: 2%;
+    text-align: center;
+    font-style: normal;
+    font-weight: $fw-h;
+    }
+
+    p {
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 2%;
+    }
+}
 
 .footer {
     display: flex;

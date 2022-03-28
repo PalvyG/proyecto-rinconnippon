@@ -24,9 +24,9 @@
         <nav data-aos="zoom-out" class="header">
             <div class="header__cont-logo">
                 <img src="../images/logotipo.png" alt="Logotipo" class="header__imagen">
-                <h1 class="header__cont-logo__name--jap">ニホンコーナー</h1>
-                <h1 id="divisor-logo">|</h1>
-                <h1 class="header__cont-logo__name--esp">Rincón Nippon</h1>
+                <p class="header__cont-logo__name--jap">ニホンコーナー</p>
+                <p id="divisor-logo">|</p>
+                <p class="header__cont-logo__name--esp">Rincón Nippon</p>
             </div>
             <div class="header__cont-links">
                 <ul class="header__cont-links__links">
@@ -47,11 +47,14 @@
         </nav>
     </header>
     <main class="faq">
-        <h3 data-aos="zoom-in" class="faq__titulo">¡Sacate la duda!</h3>
+        <div data-aos="fade-zoom-in" data-aos-duration="1000">
+            <h1>Preguntas Frecuentes</h1>
+        </div>
+        <h2 data-aos="fade-zoom-in" data-aos-duration="1000" class="faq__titulo">¡Sacate la duda!</h2>
         <div data-aos="fade-right" class="container container--faq">
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-lg-9 mb-5">
-                    <h4 class="faq__pregunta">¿Cuánto tiempo tarda en llegar el artículo hasta mi casa?</h4>
+                    <h3 class="faq__pregunta">¿Cuánto tiempo tarda en llegar el artículo hasta mi casa?</h3>
                     <p class="faq__respuesta">El tiempo de entrega del artículo coleccionable va a depender de varios
                         factores:</p>
                     <ul class="faq__ul">
@@ -62,13 +65,13 @@
                     </ul>
                     <p class="faq__respuesta">Es decir, cada pedido podrá tener un tiempo estimado de entrega distinto.
                         Es probable, además, que si el pedido se realiza durante fechas puntuales (como Navidad), demore
-                        más aún. <br> Por eso recomendamos siempre hacer los pedidos con anticipación si los querés
+                        más aún. <br><br> Por eso recomendamos siempre hacer los pedidos con anticipación si los querés
                         tener para una ocasión especial.</p>
                 </div>
                 <div class="col-12 col-lg-3 mb-5">
                     <div data-aos="flip-left" data-aos-duration="750" class="card card--faq1">
                         <div class="card-body">
-                            <h4 class="card-title">Servicios de Importación</h4>
+                            <h3 class="card-title">Servicios de Importación</h3>
                             <p class="card-text">Ofrecemos diferentes servicios de importación, en precio y rapidez.</p>
                             <a href="../pages/services.html" class="btn btn-primary">¡Quiero saber más!</a>
                         </div>
@@ -77,7 +80,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4 class="faq__pregunta">¿De dónde compran sus productos?</h4>
+                    <h3 class="faq__pregunta">¿De dónde compran sus productos?</h3>
                     <p class="faq__respuesta">La gran mayoría de los artículos de marca (Pokémon, Bandai, Banpresto,
                         etc.) los obtenemos de mayoristas o de ofertas y subastas publicadas en las plataformas de <a
                             class="animacion-links" href="https://www.amazon.com/">Amazon</a> o <a
@@ -94,27 +97,31 @@
             </div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-xl-8 mb-5">
-                    <h4 class="faq__pregunta">¿Hay que pagar algún cargo adicional?</h4>
-                    <p class="faq__respuesta">¡En absoluto! El precio que abonás al finalizar la compra es final. Si
+                    <h3 class="faq__pregunta">¿Hay que pagar algún cargo adicional?</h3>
+                    <p class="faq__respuesta">¡En absoluto! El precio que abonás al finalizar la compra no estará sujeto
+                        a modificaciones. Si
                         luego de abonar surge algún inconveniente, o si por alguna situación particular con el vendedor
                         del exterior hay que abonar un importe adicional (en caso de ser un artículo que no esté en
                         nuestro catálogo), corre por nuestra cuenta. <br><br> Eso sí: En el caso de elegir nuestro
-                        servicio de importación "Lite", <strong>deberás abonar los impuestos correspondientes al
+                        servicio de importación
+                        <a href="services.html" class="animacion-links">"Lite"</a>, <strong>deberás abonar los impuestos
+                            correspondientes al
                             realizar la
                             Declaración Jurada ante la AFIP*</strong>, así como <strong>las tasas de envío del Correo
-                            Argentino**</strong>.</p>
+                            Argentino**</strong>.
+                    </p>
                 </div>
                 <div class="col-12 col-xl-4 mb-5">
                     <div data-aos="flip-down" data-aos-duration="750" class="accordion"
                         id="accordionPanelsStayOpenExample">
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <h3 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button accordion--faq1" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                                     aria-controls="panelsStayOpen-collapseOne">
                                     <b>*Declaración Jurada ante la AFIP</b>
                                 </button>
-                            </h2>
+                            </h3>
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                                 aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body accordion-body--faq1 ">
@@ -125,21 +132,22 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <h3 class="accordion-header" id="panelsStayOpen-headingTwo">
                                 <button class="accordion-button collapsed accordion--faq1" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
                                     aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                                     <b>**Tasas del Correo Argentino</b>
                                 </button>
-                            </h2>
+                            </h3>
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingTwo">
                                 <div class="accordion-body accordion-body--faq1 ">
                                     Por el envío del artículo a tu domicilio, el Correo te cobrará un importe que estará
                                     determinado según la ubicación de la entrega, así como el peso y las dimensiones del
-                                    artículo. Para más informacion, consultar en la página del <b><a
-                                            href="https://www.correoargentino.com.ar/servicios/paqueteria/encomienda-correo-clasica">Correo
-                                            Argentino</a></b>.
+                                    artículo. Para más informacion, consultar en el sitio web oficial del Correo
+                                    Argentino, en su apartado de <b><a
+                                            href="https://www.correoargentino.com.ar/servicios/paqueteria/encomienda-correo-clasica"
+                                            class="animacion-links">encomiendas</a></b>.
                                 </div>
                             </div>
                         </div>
@@ -148,8 +156,10 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-12">
-                    <h4 class="faq__pregunta">¿Tienen algún tipo de garantía?</h4>
-                    <p class="faq__respuesta">¡Por supuesto! Tenemos garantía por daños al producto durante el envío. Es
+                    <h3 class="faq__pregunta">¿Tienen algún tipo de garantía?</h3>
+                    <p class="faq__respuesta">¡Por supuesto! Tenemos garantía por daños al producto durante el envío que
+                        corre por nuestra cuenta <span>(Servicio de importación <a href="servicios.html"
+                                class="animacion-links">"Deluxe"</a>)</span>. Es
                         decir, <strong>si el producto está dañado al sacarlo del empaquetado, nos hacemos cargo de
                             enviar uno nuevo o dar un reembolso total</strong>.<br><br>De todos modos, no nos hacemos
                         cargo si el producto sufre daños posteriormente a la entrega o no funciona correctamente. En tal
@@ -158,8 +168,8 @@
                 </div>
             </div>
         </div>
-        <div class="faq-prefooter">
-            <h4>Y por último...</h4>
+        <div class="prefooter">
+            <h3>Y por último...</h3>
             <p>Recordá que cualquier otra consulta la podés hacer <a class="animacion-links"
                     href="contact.html">contactándonos</a>.</p>
         </div>

@@ -12,12 +12,42 @@
         line-height: 200%;
     }
 
-    h3 {
+    .h1-index {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35%;
+        height: 60vh;
+        width: 100%;
+        line-height: 400%;
+    
+        .h1-index__title {
+            margin: 0 auto;
+            text-align: center;
+            align-self: center;
+            margin-bottom: 2rem;
+        }
+    
+        b {
+            font-size: $fs-xl;
+        }
+    
+        span {
+            font-weight: 700;
+            font-style: italic;
+            font-size: $fs-l;
+        }
+    }
+    
+    h1 {
+        font-size: 60px !important;
+    }
+
+    h2 {
         font-size: $fs-l !important;
     }
 
 
-    h4 {
+    h3 {
         font-size: $fs-m !important;
     }
 
@@ -100,6 +130,15 @@
         }
     }
 
+    .texto-solapa--rosa {
+        font-size: 22px !important;
+        margin-top: 5%;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: $fuxia;
+        margin-bottom: -0.5%;
+    }
+
     .tutorialesjcc {
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr;
@@ -118,8 +157,8 @@
     /* PRODUCTOS */
 
     .productos {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
     }
 
 
@@ -169,6 +208,7 @@
         .form2__inputs__selector__btn {
             font-size: 100%;
             font-family: $ff-p;
+            margin: 0 auto;
         }
 
         .form2__inputs__selector__comentarios {
@@ -199,5 +239,6 @@
 
     .faq__ul {
         font-size: $fs-s !important;
+        margin-left: 10% !important;
     }
 }

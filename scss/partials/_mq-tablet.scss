@@ -17,11 +17,11 @@
         font-size: 80%;
     }
 
-    h3 {
+    h2 {
         font-size: $fs-xl !important;
     }
 
-    h4 {
+    h3 {
         font-size: $fs-l !important;
     }
 
@@ -43,27 +43,23 @@
             align-content: center;
             align-items: center;
 
-            h1 {
-                font-size: 125%;
-                line-height: 100%;
-            }
-
             .header__cont-logo__img {
                 padding-left: 0;
             }
 
             .header__cont-logo__name--esp {
                 width: 6rem;
-                font-size: $fs-l;
+                font-size: $fs-l !important;
             }
 
             #divisor-logo {
-                font-size: 250%;
+                font-size: 350% !important;
             }
 
             .header__cont-logo__name--jap {
                 width: 6rem;
-                font-size: $fs-l;
+                font-size: $fs-l !important;
+                font-weight: 700;
             }
         }
 
@@ -118,7 +114,7 @@
         border-top-left-radius: 0%;
         max-width: 90vw;
         min-width: 65%;
-        max-height: 65vh;
+        max-height: 67vh;
         align-items: center;
         justify-items: center;
         justify-content: space-evenly;
@@ -140,9 +136,13 @@
 
     /* PRODUCTOS */
 
+    #h1-products {
+        font-size: $fs-xl!important;
+    }
+
     .productos {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
 
 
