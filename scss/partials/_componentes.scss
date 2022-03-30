@@ -106,6 +106,7 @@
 }
 
 .texto-solapa--rosa {
+    @extend .texto-solapa;
     margin-top: 5%;
     padding-right: 20px;
     padding-left: 20px;
@@ -133,7 +134,7 @@
     p {
         text-align: center;
         line-height: 100%;
-        font-weight: $fw-h;
+        font-weight: map-get($fw, h);
         font-size: 125%;
     }    
 }
@@ -146,7 +147,7 @@ iframe {
 }
 
 .texto-index-2 {
-    margin-bottom: 4%;
+    @extend .texto-index-1;
 
     span {
         font-style: italic;
@@ -162,7 +163,7 @@ iframe {
 }
 
 .filtros__categoria__titulo {
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     font-size: larger;
     line-height: 200%;
     font-style: normal;
@@ -179,7 +180,7 @@ iframe {
 }
 
 .filtros__categoria__checkbox {
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     font-size: normal;
     line-height: 165%;
     width: fit-content;
@@ -196,69 +197,24 @@ iframe {
 }
 
 .filtros__marca__titulo {
-    font-weight: $fw-h;
-    font-size: larger;
-    line-height: 200%;
-    font-style: normal;
-    width: fit-content;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @extend .filtros__categoria__titulo;
+    margin-top: 0%;
     background-color: $fuxia;
 }
 
 .filtros__marca__checkbox {
-    font-weight: $fw-h;
-    font-size: normal;
-    line-height: 165%;
-    width: fit-content;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
-    margin-right: 2rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    @extend .filtros__categoria__checkbox;
     background-color: $fuxia;
-    margin-bottom: 1rem;
 }
 
 .filtros__rango-precio__titulo {
-    font-weight: $fw-h;
-    font-size: larger;
-    line-height: 200%;
-    font-style: normal;
-    width: fit-content;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 0;
-    padding-top: 00.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @extend .filtros__marca__titulo;
     background-color: $amarillo;
 }
 
 .filtros__rango-precio__filtro {
-    font-weight: $fw-h;
-    font-size: normal;
-    line-height: 165%;
-    width: fit-content;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    border-top-right-radius: 1rem;
-    margin-right: 2rem;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.5rem;
+    @extend .filtros__marca__checkbox;
     background-color: $amarillo;
-    margin-bottom: 1rem;
 
     label {
         display: block;
@@ -310,7 +266,7 @@ iframe {
     margin-bottom: 3%;
 
     .servicios__subtitulo {
-        font-weight: $fw-h;
+        font-weight: map-get($fw, h);
         margin-top: 1%;
         margin-bottom: 1%;
         margin-left: 3%;
@@ -325,7 +281,7 @@ iframe {
         padding-top: 1%;
         margin-bottom: 2%;
         margin-left: 6%;
-        font-weight: $fw-l;
+        font-weight: map-get($fw, l);
 
         span {
             font-style: italic;
@@ -347,7 +303,7 @@ iframe {
 }
 
 .faq__pregunta {
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     padding-top: 1%;
     margin-bottom: 1%;
     margin-left: 3%;
@@ -386,16 +342,16 @@ iframe {
     a {
         background-color: $crema !important;
         color: $marron-d !important;
-        font-weight: $fw-h;
+        font-weight: map-get($fw, h);
     }
 
     h3 {
-        font-weight: $fw-h;
+        font-weight: map-get($fw, h);
     }
 }
 
 strong{
-    font-weight: $fw-h !important;
+    font-weight: map-get($fw, h) !important;
 }
 
 .accordion--faq1 {
@@ -414,7 +370,7 @@ strong{
 
 .accordion-body--faq1 {
     background-color: $crema !important;
-    font-size: $fs-s !important;
+    font-size: map-get($fs, s) !important;
 }
 
 
@@ -434,7 +390,7 @@ strong{
 }
 
 .form1__titulo {
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     font-size: x-large;
     line-height: 200%;
     font-style: normal;
@@ -461,7 +417,7 @@ strong{
     background-color: $naranja;
     overflow: auto;
     margin-bottom: 5%;
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
 
     .form1__inputs__text {
         line-height: normal;
@@ -476,25 +432,15 @@ strong{
 }
 
 .form2__titulo {
-    font-weight: $fw-h;
-    font-size: x-large;
-    line-height: 200%;
-    font-style: normal;
-    width: fit-content;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding-top: 0.5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    @extend .form1__titulo;
     margin-top: 3%;
-    margin-bottom: 0;
-    background-color: $fuxia;
     margin-left: 5%;
+    background-color: $fuxia;
 }
 
 .form2__inputs {
     font-size: 125%;
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     line-height: 200%;
     display: flex;
     flex-direction: column;
@@ -565,6 +511,6 @@ textarea {
     text-align: center;
 
     .contacto-prefooter__texto {
-        font-weight: $fw-l;
+        font-weight: map-get($fw, l);
     }
 }

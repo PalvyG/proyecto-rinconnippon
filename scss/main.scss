@@ -9,16 +9,32 @@ $carmesi: #be3434;
 $crema: #ffd0b3;
 $marron-d: #422911;
 $marron-l: #743902;
-$ff-t: 'Source Sans Pro', sans-serif;
-$ff-p: 'Epilogue', sans-serif;
-$fw-h: 700;
-$fw-l: 400;
-$fs-xl: 32px;
-$fs-l: 24px;
-$fs-m: 19px;
-$fs-s: 17px;
 $img-max: 310px;
 $br-solapas: 1rem;
+$ff-t: "Source Sans Pro", "sans serif";
+$ff-p: "Epilogue", "sans serif";
+$fw: (
+    l: 400,
+    h: 700,
+);
+$fs: (
+    s: 17px,
+    m: 19px,
+    l: 24px,
+    xl: 32px,
+);
+@mixin links-after($cont, $pos, $tp, $lft, $wd, $hg, $tsf, $tsf-og, $tsn, $bg-color) {
+    content: $cont;
+    position: $pos;
+    top: $tp;
+    left: $lft;
+    width: $wd;
+    height: $hg;
+    transform: $tsf;
+    transform-origin: $tsf-og;
+    transition: $tsn;
+    background-color: $bg-color;
+}
 
 
 

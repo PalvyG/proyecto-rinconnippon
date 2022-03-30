@@ -8,14 +8,14 @@
 }
 
 body {
-    background-image: url(../../images/background.png);
+    background-image: url(../../images/fondo.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 17.5% top;
     background-color: $bgcolor-fondo !important;
     color: $marron-d !important;
     font-family: $ff-p !important;
-    font-weight: $fw-l;
+    font-weight: map-get($fw, l);
     line-height: 200%;
     overflow-x: hidden;
 }
@@ -58,13 +58,13 @@ h1 {
     }
 
     b {
-        font-size: $fs-xl;
+        font-size: map-get($fs, xl);
     }
 
     span {
         font-weight: 700;
         font-style: italic;
-        font-size: $fs-l;
+        font-size: map-get($fs, l);
     }
 }
 
@@ -74,11 +74,11 @@ h2 {
     font-family: $ff-t;
     font-size: 250% !important;
     line-height: 200%;
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
 }
 
 h3 {
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     font-size: x-large !important;
     line-height: 200%;
     font-style: italic;
@@ -132,11 +132,9 @@ p {
         }
 
         .header__cont-logo__name--esp {
+            @extend .header__cont-logo__name--jap;
             margin-top: 12.5px;
-            margin-left: -2%;
-            margin-right: -2%;
             width: min-content;
-            font-family: $ff-t;
             line-height: 100%;
             font-size: 175%;
             flex-wrap: wrap;
@@ -153,7 +151,7 @@ p {
             margin-top: 1rem;
             height: 100%;
             display: flex;
-            font-weight: $fw-h;
+            font-weight: map-get($fw, h);
             gap: 1.5rem;
             align-items: center;
             padding-right: 4rem;
@@ -172,29 +170,14 @@ p {
     }
 }
 
-
-
-
-
-/* PARA HACER CON MAPEADO */
-
 .animacion-links::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0%;
-    width: 100%;
-    height: 3px;
-    background-color: $carmesi;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s;
+    @include links-after("", absolute, 100%, 0%, 100%, 3px, scaleX(0), right, transform .5s, $carmesi);
 }
 
 .animacion-links:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-    transform: transform 0.5s;
+    transition: transform 0.5s;
 }
 
 header a {
@@ -209,20 +192,12 @@ header a {
         &::after {
             transform: scaleX(1);
             transform-origin: left;
+            transform: transform 0.5s;
         }
     }
 
     &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        width: 100%;
-        height: 3px;
-        background-color: $marron-d;
-        transform: scaleX(0);
-        transform-origin: right;
-        transition: transform .5s;
+        @include links-after("", absolute, 100%, 0%, 100%, 3px, scaleX(0), right, transform .5s, $marron-d)
     }
 }
 
@@ -238,7 +213,7 @@ header a {
     padding-top: 2%;
     text-align: center;
     font-style: normal;
-    font-weight: $fw-h;
+    font-weight: map-get($fw, h);
     }
 
     p {

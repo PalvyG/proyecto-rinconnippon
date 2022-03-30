@@ -18,15 +18,15 @@
     }
 
     h2 {
-        font-size: $fs-xl !important;
+        font-size: map-get($fs, xl) !important;
     }
 
     h3 {
-        font-size: $fs-l !important;
+        font-size: map-get($fs, l) !important;
     }
 
     p {
-        font-size: $fs-m !important;
+        font-size: map-get($fs, m) !important;
     }
 
     .header {
@@ -49,7 +49,7 @@
 
             .header__cont-logo__name--esp {
                 width: 6rem;
-                font-size: $fs-l !important;
+                font-size: map-get($fs, l) !important;
             }
 
             #divisor-logo {
@@ -58,7 +58,7 @@
 
             .header__cont-logo__name--jap {
                 width: 6rem;
-                font-size: $fs-l !important;
+                font-size: map-get($fs, l) !important;
                 font-weight: 700;
             }
         }
@@ -137,7 +137,7 @@
     /* PRODUCTOS */
 
     #h1-products {
-        font-size: $fs-xl!important;
+        font-size: map-get($fs, xl)!important;
     }
 
     .productos {
@@ -178,12 +178,12 @@
         margin: 0 auto;
         text-align: center;
         width: 55vw;
-        min-width: 30rem;
+        min-width: 29.5rem;
         border-radius: $br-solapas;
         margin-bottom: 3%;
 
         div input {
-            width: 98%;
+            width: 98% !important;
         }
 
         div label {
@@ -231,7 +231,7 @@
     }
 
     .contacto-prefooter__texto {
-        font-size: $fs-m !important;
+        font-size: map-get($fs, m) !important;
     }
 
 
@@ -240,12 +240,12 @@
 
     .faq__pregunta {
         text-align: center;
-        font-size: $fs-l !important;
+        font-size: map-get($fs, l) !important;
     }
 
     .faq__respuesta {
         margin: 0 auto;
-        font-size: $fs-m !important;
+        font-size: map-get($fs, m) !important;
         margin-bottom: 2%;
         margin-left: 6%;
     }
@@ -253,7 +253,7 @@
     .faq__ul {
         list-style: circle;
         margin-left: 5rem;
-        font-size: $fs-m !important;
+        font-size: map-get($fs, m) !important;
     }
 
     .faq-prefooter {

@@ -28,13 +28,13 @@
         }
     
         b {
-            font-size: $fs-xl;
+            font-size: map-get($fs, xl);
         }
     
         span {
             font-weight: 700;
             font-style: italic;
-            font-size: $fs-l;
+            font-size: map-get($fs, l);
         }
     }
     
@@ -43,16 +43,16 @@
     }
 
     h2 {
-        font-size: $fs-l !important;
+        font-size: map-get($fs, l) !important;
     }
 
 
     h3 {
-        font-size: $fs-m !important;
+        font-size: map-get($fs, m) !important;
     }
 
     p {
-        font-size: $fs-s !important;
+        font-size: map-get($fs, s) !important;
     }
 
     .header {
@@ -222,7 +222,7 @@
     }
 
     .contacto-prefooter__texto {
-        font-size: $fs-s !important;
+        font-size: map-get($fs, s) !important;
     }
 
 
@@ -234,11 +234,11 @@
     }
 
     .faq__respuesta {
-        font-size: $fs-s !important;
+        font-size: map-get($fs, s) !important;
     }
 
     .faq__ul {
-        font-size: $fs-s !important;
+        font-size: map-get($fs, s) !important;
         margin-left: 10% !important;
     }
 }
