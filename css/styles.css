@@ -1,4 +1,7 @@
 /* VARIABLES */
+body {
+  background-image: url(../images/fondo.png); }
+
 /* IMPORT */
 /* GENERALES */
 * {
@@ -6,7 +9,6 @@
   padding: 0%; }
 
 body {
-  background-image: url(../../images/uigokubanpresto.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 17.5% top;
