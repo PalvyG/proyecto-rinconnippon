@@ -13,6 +13,8 @@
     }
 
     main {
+        margin-left: 15px;
+        margin-right: 15px;
         padding-top: 12rem;
         font-size: 80%;
     }
@@ -143,6 +145,22 @@
     .productos {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
+        gap: 5px;
+        padding: 5px;
+
+        div div img {
+            max-height: 300px;
+            max-width: 25vw;
+        }
+    }
+
+    .filtros {
+        font-size: 14px;
+        max-width: 180px;
+    }
+    
+    .filtros__categoria__checkbox {
+        width: 170px;
     }
 
 

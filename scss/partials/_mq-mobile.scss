@@ -159,6 +159,29 @@
     .productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
+
+        div {
+            flex-direction: row;
+            justify-content: center;
+
+            p {
+                margin: 0 auto;
+            }
+
+            div {
+                margin-left: 5%;
+                width: 50%;
+
+                img {
+                    max-height: 170px;
+                    max-width: 40vw;
+                }
+            }
+        }
+    }
+
+    .filtros {
+        display: none;
     }
 
 

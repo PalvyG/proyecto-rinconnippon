@@ -170,7 +170,6 @@ header a {
     transition: transform 0.5s;
     background-color: #422911; }
 
-/* ---------------------- */
 .prefooter h3 {
   padding-top: 2%;
   text-align: center;
@@ -361,7 +360,7 @@ iframe {
   font-weight: 700;
   font-size: normal;
   line-height: 165%;
-  width: fit-content;
+  width: 200px;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -372,6 +371,10 @@ iframe {
   padding-bottom: 0.5rem;
   background-color: #FF9F45;
   margin-bottom: 1rem; }
+  .filtros__categoria__checkbox div, .filtros__marca__checkbox div, .filtros__rango-precio__filtro div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 .filtros__marca__titulo, .filtros__rango-precio__titulo {
   margin-top: 0%;
@@ -389,6 +392,7 @@ iframe {
     display: block;
     margin-bottom: 2%; }
   .filtros__rango-precio__filtro input {
+    max-width: 100%;
     display: block;
     margin-bottom: 5%; }
 
@@ -398,26 +402,38 @@ iframe {
 
 .productos {
   display: grid;
+  border-color: red;
+  border-style: solid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  border-radius: 1rem;
-  border-style: groove;
-  border-color: greenyellow;
-  border-width: 1rem;
+  grid-template-rows: repeat(15, 1fr);
   width: 100%;
-  height: 100%vh;
+  height: 100%;
+  gap: 10px;
+  padding: 10px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 1rem;
   margin-top: 1.2%; }
   .productos div {
     display: flex;
+    flex-direction: column;
     border-style: solid;
-    border-color: #FC4F4F;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
+    border-color: green;
+    justify-content: space-between;
     align-items: center; }
+    .productos div div {
+      margin-bottom: 5px; }
+      .productos div div img {
+        border-radius: 10px;
+        max-height: 30vh;
+        max-width: 15vw; }
+    .productos div p {
+      text-align: center;
+      font-weight: 700; }
+    .productos div span {
+      text-align: center;
+      display: block;
+      font-style: italic; }
 
 /* SERVICIOS */
 .servicios {
@@ -618,6 +634,8 @@ textarea {
   body {
     position: relative; }
   main {
+    margin-left: 15px;
+    margin-right: 15px;
     padding-top: 12rem;
     font-size: 80%; }
   h2 {
@@ -698,7 +716,17 @@ textarea {
     font-size: 32px !important; }
   .productos {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5px;
+    padding: 5px; }
+    .productos div div img {
+      max-height: 300px;
+      max-width: 25vw; }
+  .filtros {
+    font-size: 14px;
+    max-width: 180px; }
+  .filtros__categoria__checkbox, .filtros__marca__checkbox, .filtros__rango-precio__filtro {
+    width: 170px; }
   /* SERVICIOS */
   .servicios__subtitulo {
     font-size: large; }
@@ -873,6 +901,19 @@ textarea {
   .productos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr); }
+    .productos div {
+      flex-direction: row;
+      justify-content: center; }
+      .productos div p {
+        margin: 0 auto; }
+      .productos div div {
+        margin-left: 5%;
+        width: 50%; }
+        .productos div div img {
+          max-height: 170px;
+          max-width: 40vw; }
+  .filtros {
+    display: none; }
   /* SERVICIOS */
   /* No hay media queries */
   /* CONSULTA */
