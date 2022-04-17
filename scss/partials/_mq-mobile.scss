@@ -188,7 +188,13 @@
 
 
     /* SERVICIOS */
-    /* No hay media queries */
+    .servicios__subtitulo {
+        font-size: map-get($fs, m) !important;
+    }
+
+    .servicios__descripcion {
+        font-size: map-get($fs, s) !important;
+    }
 
 
 

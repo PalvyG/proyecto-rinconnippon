@@ -95,6 +95,20 @@
     
 
     /* INDEX */
+    .seccion-productos {
+
+    
+        section {
+    
+            div {
+                display: block;
+        
+                p {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
     .seccion-productos__marcas {
 
@@ -134,7 +148,16 @@
         border-radius: $br-solapas;
     }
 
+    .texto-index-2 {
 
+        div {
+            display: block;
+        
+            p {
+                width: 100%;
+            }
+        }
+    }
 
     /* PRODUCTOS */
 
@@ -168,10 +191,22 @@
     /* SERVICIOS */
 
 
+    .servicios {
+        display: block;
 
-    .servicios__subtitulo {
-        font-size: large;
+        div {
+            width: 100%;
+
+            .servicios__subtitulo {
+                font-size: map-get($fs, l);
+            }
+
+            .servicios__descripcion {
+                font-size: map-get($fs, m);
+            }
+        }
     }
+    
 
     /* CONTACTO */
 
@@ -230,7 +265,7 @@
         }
 
         .form2__inputs__selector__leyenda {
-            font-size: 100%;
+            font-size: 100% !important;
         }
 
         .form2__inputs__selector__btn {
@@ -255,6 +290,13 @@
 
 
     /* FAQ */
+
+    .col-12__faq {
+
+        div {
+            display: block;
+        }
+    }
 
     .faq__pregunta {
         text-align: center;
