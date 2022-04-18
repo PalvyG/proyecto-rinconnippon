@@ -19,6 +19,10 @@
         height: 60vh;
         width: 100%;
         line-height: 400%;
+        
+        h1 {
+            font-size: 80px !important;
+        }
     
         .h1-index__title {
             margin: 0 auto;
@@ -39,7 +43,7 @@
     }
     
     h1 {
-        font-size: 60px !important;
+        font-size: 57px !important;
     }
 
     h2 {
@@ -109,7 +113,12 @@
     }
 
     .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         font-size: 12px;
+        line-height: 150%;
+        gap: 0px;
 
         i {
             font-size: 400%;
@@ -159,6 +168,7 @@
     .productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
+        margin-left: -30px;
 
         div {
             flex-direction: row;
@@ -209,7 +219,7 @@
     }
 
     .form1__inputs {
-        width: 75vw;
+        width: 85vw !important;
         min-width: 10rem;
         margin-bottom: 10%;
     }
@@ -218,9 +228,16 @@
         padding: 2.8%;
         text-align: center;
         border-radius: $br-solapas;
-        max-width: 100vw;
+        width: 85vw !important;
         font-size: 125%;
         line-height: 200%;
+        
+        .form2__inputs__radial {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
         #selectfile {
             display: flex;
@@ -236,9 +253,12 @@
         }
     
         .form2__inputs__selector__btn {
+            display: flex;
+            align-items: center;
             font-size: 100%;
             font-family: $ff-p;
             margin: 0 auto;
+            max-width: 165px;
         }
 
         .form2__inputs__selector__comentarios {
