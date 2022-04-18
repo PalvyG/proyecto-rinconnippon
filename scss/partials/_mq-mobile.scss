@@ -165,10 +165,52 @@
 
     /* PRODUCTOS */
 
+    .filtros {
+        animation: none;
+    }
+
+    .filtros-sidebar {
+        position: fixed;
+        width: 100vw;
+        height: 50px;
+        background-color: $amarillo;
+        box-shadow: 1px 1px 1rem 1px $beige;;
+        margin-left: -2.51%;
+        margin-right: -2.51%;
+        margin-top: -1.75rem;
+        z-index: 5;
+    }
+
+    #link-marron {
+        color: $marron-l !important;
+    }
+
+    .btn-open-sidebar {
+        font-size: 150%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 12px;
+        right: 5.5%;
+        align-items: center;
+        justify-content: flex-end;
+        gap:.5rem;
+        font-weight: 700;
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    #h1-products {
+        margin-top: 2rem;
+    }
+
     .productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
-        margin-left: -30px;
+        margin-left: -5%;
 
         div {
             flex-direction: row;
@@ -191,10 +233,38 @@
         }
     }
 
-    .filtros {
-        display: none;
+    .btn-open-sidebar {
+        position: fixed;
+        z-index: 2;
     }
 
+    .filtros {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: .25rem;
+        padding-top: 10rem;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        z-index: 1;
+        background-color: #ddb05cee;
+    }
+    
+    .filtros__categoria__titulo, .filtros__categoria__checkbox, .filtros__marca__titulo, .filtros__marca__checkbox, .filtros__rango-precio__titulo, .filtros__rango-precio__filtro {
+        background-color: transparent;
+    }
+
+    #sidebar:target {
+        transform: translateX(0);
+    }
+
+    .btn-close-sidebar {
+        display: flex;
+        font-size: 32px;
+        margin-left: 10%;
+        color: $marron-d !important;
+    }
 
 
     /* SERVICIOS */

@@ -51,11 +51,14 @@
         </nav>
     </header>
     <main>
+        <div data-aos="zoom-out" class="filtros-sidebar">
+            <a class="btn-open-sidebar animacion-link-marron" href="#sidebar" id="link-marron">Filtrar <i class="fa-solid fa-filter"></i></a>
+        </div>
         <div data-aos="fade-zoom-in" data-aos-duration="1000">
             <h1 id="h1-products">Catálogo</h1>
         </div>
         <section class="contenedor-filtros-productos">
-            <div data-aos="fade-right" class="filtros">
+            <div class="filtros" id="sidebar">
                 <form class="filtros__categoria" action="">
                     <legend class="filtros__categoria__titulo">Categoría</legend>
                     <section class="filtros__categoria__checkbox">
@@ -111,6 +114,7 @@
                         <input type="number" name="pricemaximum" id="pricemaximum">
                     </section>
                 </form>
+                <a class="btn-close-sidebar" href="#"><i class="fa-solid fa-xmark"></i></a>
             </div>
             <div data-aos="fade-left" class="productos">
                 <div>

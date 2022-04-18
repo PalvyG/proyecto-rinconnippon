@@ -183,6 +183,28 @@ iframe {
 
 /* PRODUCTOS */
 
+.filtros {
+    margin-top: 1rem;
+    animation-name: fade-right;
+    animation-iteration-count: 1;
+    animation-duration: .4s;
+
+    @keyframes fade-right {
+        0% {transform: translateX(-50%); opacity: 0%;}
+        100% {transform: translateX (0%); opacity: 100%;}
+    }
+}
+
+
+
+.btn-open-sidebar {
+    display: none;
+}
+
+.btn-close-sidebar {
+    display: none;
+}
+
 #h1-products {
     font-size: 44px !important;
 }
